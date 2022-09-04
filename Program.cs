@@ -1,2 +1,34 @@
-﻿string[] array1 = new string[6] {"123", "945", "hello", "world", "new", "password"};
+﻿string[] array1 = new string[6] {"123", ":-)", "hello", "world", "new", "password"};
 string[] array2 = new string[array1.Length];
+
+void FindSecondArray()
+{ 
+    int count = 0;
+    for(int i = 0; i < array1.Length; i++)
+    {
+      if (array1[i].Length <= 3)
+      {
+        array2[count] = array1[i];
+      }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+ int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+    if(array1[i].Length <= 3)
+        {
+        array2[count] = array1[i];
+        count++;
+        }
+    }    
